@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+    <body>
+        <header>
+            <title>Meeting Minutes Notes</title>
+            <meta charset="UTF-8">
+            <link rel="icon" type="image/x-icon" href="/screenshots/favicon1.png">
+        </header>    
+
+        <div class="header">
+            <h1>Intro to HTML: Summary</h1>
+            <h3><i>Session 1</i></h3>
+            <h4><i>10/06/2022</i></h4>    
+        </div>
+
+        <nav>
+            <a href="/screenshots/rick.gif">Resources</a>
+        </nav>            
+        <hr>
+        <h2>Attendance</h2>
+        <div class="attendance-container">
+            <ol> 
+                <li> <input type="checkbox" id="person1" name="person1" value="person1"> Younus Ahmad</li>
+                <li> <input type="checkbox" id="person2" name="person2" value="person2"> John Doe</li>
+                <li> <input type="checkbox" id="person3" name="person3" value="person3"> Bob Joe Carl</li>
+                <li> <input type="checkbox" id="person4" name="person4" value="person4"> Peter Parker</li>
+            </ol>
+        </div>
+
+        <main>
+            <h2>Agenda</h2>
+            <p>
+                Goal: To become familiarized with basic HTML, building a simple webpage without any additional styling or functionality.
+                Everything is pretend and none of this is real lol.
+            </p>
+
+            <section>
+                <h2>Last Meeting</h2>
+                <h3>Scheduling Practice Sessions</h3>
+                <p>
+                    Be sure to fill out availabilities to track when everyone can meetup to code.
+                </p>
+                <h3>Clocking Hours</h3>
+                <p>
+                    Everyone be sure to record how many hours you've spent writing out html code. 
+                </p>
+                <h2>This Meeting</h2>
+                <ol>
+                    <li>
+                        Practice setting up a very basic html page that looks like this:<br>
+                        <img src="screenshots/img_chrome.png" alt="basic html page layout">
+                    </li>
+                    <li>
+                        <details>
+                            <summary>Here's the exact source code for this:</summary>
+                            <p>Go figure it out bruh.</p>
+                        </details>
+                    </li>
+                    <li>
+                        Make sure to get to know your teammates and get comfortable with them. You're gonna spend a lot of time 
+                        around with them!!!
+                    </li>
+                    <li>Try to figure out how this <span> span </span> this works.</li>
+                </ol>
+
+                <h3><em><strong>Important</strong> things to remember:</em> </h3>
+                <ul>
+                    <li>Always have fun!</li>
+                    <li>Never <b>overthink</b>, you're making the right decisions.</li>
+                    <li>We live on a literal rock floating through space, nothing matters so be <b>confident</b> :).</li>
+                    <li>And <b>HTML</b> is the best language of all time!!!</li>
+                    <li>This is the most important: never <strong>procrastinate.</strong></li>
+                </ul>
+            </section>
+
+            <br>
+
+            <section>
+                <h3>Feedback</h3>
+                <form action="/feedback.txt" method="get">
+                    <fieldset>
+                        <legend>Feedback: </legend>
+                        <label for="fname">First name:</label>
+                        <input type="text" id="fname" name="fname"><br><br>
+                        <label for="lname">Last name:</label>
+                        <input type="text" id="lname" name="lname"><br><br>
+                        <label for="experience">How would you rate this website?</label>
+                        <input type="range" id="experience" name="experience"><br><br>
+                        <label for="recommendation">Would you recommend this website?</label>
+                        <input type="checkbox" id="yes" name="yes"><label for="yes"> Yes </label>
+                        <input type="checkbox" id="no" name="no"><label for="no"> No </label><br><br>
+                        <label for="date">When did you visit this site?</label>
+                        <input type="date" id="date" name="date"><br><br>
+                        <label for="feedback">List any questions/concerns below: </label><br>
+                        <textarea id="feedback" name="feedback" rows="4" cols="50">Write out any questions/concerns here!</textarea><br><br>
+                        <label for="browser">Which browser did you visit on?</label>
+                        <input list="browsers" name="browser" id="browser">
+                        <datalist id="browsers">
+                            <option value="Edge">
+                            <option value="Firefox">
+                            <option value="Chrome">
+                            <option value="Opera">
+                            <option value="Safari">
+                        </datalist>
+                        <br>
+                        <label for="where">How did you find this site?</label>
+                        <select id="where">
+                            <option value="idk">idk just found it</option>
+                            <option value="scammer">A scammer gave me the link and I just opened it.</option>
+                            <option value="Clickbait">Clickbaited</option>
+                            <option value="Other">Other</option>
+                        </select> <br><br>
+                        <button type="buttong">Submit</button>
+                    </fieldset>
+
+                </form>
+            </section>
+
+        </main>
+
+        <footer>
+            <p>Note: If anyone is late/missed the meeting they owe Younus at least $1,000,000.</p>
+        </footer>
+
+    </body>
+
+</html>
