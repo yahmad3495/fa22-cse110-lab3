@@ -5,10 +5,19 @@ NOTES:
 * Border adjusts the edges of the "box"
 */
 
+@font-face {
+    font-family: "Nunito";
+    src: url("./Nunito/Nunito-VariableFont_wght.ttf");
+}
+
+* {
+    font-family: "Nunito";
+}
 
 /* Putting header into a flex box to align everything in a row*/
 .header {
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     align-items: flex-end;
 
@@ -32,7 +41,15 @@ NOTES:
 }
 
 .nav_bar {
-    background-color: orange;
+    padding-left: 80%;
+    position: -webkit-sticky;
+    position: sticky;
+    background-color: #f0ffff;
+    top: 0;
+    border-style: solid;
+    border-color: rgb(167, 214, 255);
+    border-width: 3px;
+    border-radius: 3cm;
 }
 
 .media {
