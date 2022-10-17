@@ -1,37 +1,42 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <title>Meeting Minutes Notes</title>
     <meta name="author" content="Younus Ahmad">
     <link rel="prerender" type="image/x-icon" href="/screenshots/favicon1.png">
+    <link rel="stylesheet" href="./style.css">
 </head>
 
 <body>
-    <header>
+    <div class="header">
         <h1>Intro to HTML: Summary</h1>
-    </header>
 
-    <div class="data">
         <h3><i>Session 1</i></h3>
-        <h4><i>10/06/2022</i></h4>    
+        <h4><i>10/06/2022</i></h4> 
     </div>
 
-    <!-- Added audio and video elements here-->
-    <audio controls>
-        <source src="screenshots/summary.m4a" type="audio/mp4">
-    </audio>
-    <br>
-    <video width="400" height="400" controls>
-        <source src="./cse110-sample.MOV" type="video/mp4">
-    </video>
+    <div class="nav_bar">
+        <nav>
+            <a href="/screenshots/rick.gif">Resources</a>
+        </nav>
+    </div>
 
-    <nav>
-        <a href="/screenshots/rick.gif">Resources</a>
-    </nav>            
+    <!-- Added audio and video elements here
+        NOTE: audio and video html elements are inline elements -->
+    <div class="media">
+        <audio controls>
+            <source src="screenshots/summary.m4a" type="audio/mp4">
+        </audio>
+        <br>
+        <video width="400" height="400" controls>
+            <source src="./cse110-sample.MOV" type="video/mp4">
+        </video>
+    </div>
+         
     <hr>
-    <h2>Attendance</h2>
+
     <div class="attendance-container">
+        <h2>Attendance</h2>
         <ol> 
             <li> <input type="checkbox" id="person1" name="person1" value="person1"> Younus Ahmad</li>
             <li> <input type="checkbox" id="person2" name="person2" value="person2"> John Doe</li>
@@ -41,13 +46,15 @@
     </div>
 
     <main>
-        <h2>Agenda</h2>
-        <p>
-            Goal: To become familiarized with basic HTML, building a simple webpage without any additional styling or functionality.
-            Everything is pretend and none of this is real lol.
-        </p>
+        <div class="agenda">
+            <h2>Agenda</h2>
+            <p>
+                Goal: To become familiarized with basic HTML, building a simple webpage without any additional styling or functionality.
+                Everything is pretend and none of this is real lol.
+            </p>    
+        </div>
 
-        <section>
+        <section id="last-meeting">
             <h2>Last Meeting</h2>
             <h3>Scheduling Practice Sessions</h3>
             <p>
@@ -57,6 +64,9 @@
             <p>
                 Everyone be sure to record how many hours you've spent writing out html code. 
             </p>
+        </section>
+
+        <section id="this-meeting">
             <h2>This Meeting</h2>
             <ol>
                 <li>
@@ -75,7 +85,9 @@
                 </li>
                 <li>Try to figure out how this <div><span> span </span></div> this works.</li>
             </ol>
+        </section>
 
+        <section id="reminders">
             <h3><em><strong>Important</strong> things to remember:</em> </h3>
             <ul>
                 <li>Always have fun!</li>
@@ -88,7 +100,7 @@
 
         <br>
 
-        <section>
+        <section id="feedback">
             <h3>Feedback</h3>
             <form action="/feedback.txt" method="get">
                 <fieldset>
