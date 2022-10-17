@@ -1,5 +1,34 @@
+/* 
+NOTES:
+* Margin changes the distance from top of entire html element (the box its contained in)
+* Padding adjusts the distance of an html element from the edge of the "box"
+* Border adjusts the edges of the "box"
+*/
+
+
+/* Putting header into a flex box to align everything in a row*/
 .header {
-    background-color: bisque;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+
+}
+
+/* Div containing session # and date */
+.data {
+    display: flex;
+    padding-right: 2%;
+}
+
+/* Session and date are the headings. Appied a relative position to ensure they can
+   move around */
+#session {
+    position: relative;
+}
+
+#date {
+    position: relative;
+    margin-left: 2em;
 }
 
 .nav_bar {
