@@ -25,6 +25,7 @@ p {
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-end;
+    margin: auto;
 
 }
 
@@ -57,30 +58,56 @@ p {
     border-radius: 3cm;
 }
 
+.media + .hidden {
+    display: none;
+    margin: 30px 30px 30px 30px;
+}
+
 .media {
-    background-color: aqua;
+    display: inline-block;
+    padding-bottom: 12pt;
+    padding-top: 12pt;
 }
 
-.attendance-container {
-    background-color: green;
+.audio {
+    margin-right: 100px;
+    margin-bottom: 20px;
+    padding-left: 50px;
+    padding-top: 200px;
+    position: absolute;
 }
 
-.agenda {
-    background-color: red;
+
+.media > .video {
+    padding: 100px 30px 30px 60%;
 }
 
-#last-meeting {
-    background-color: blue;
+
+
+.media > .video > #myself {
+    height: 50%;
+    width: 50%;
+    max-width: 50%;
+    max-height: 50%;
 }
 
-#this-meeting {
-    background-color: azure;
+a[href*=".gif"] {
+    color:rgb(255, 0, 179);
 }
 
-#reminders {
+.feedback-fields {
+    display: grid;
     background-color: blanchedalmond;
+    border-style: solid;
+    border-color: burlywood;
+    grid-template-columns: auto auto auto;
 }
 
-#feedback {
-    background-color: aquamarine;
+#realform {
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+.feedback-from ~ footer {
+    text-decoration: dashed;
 }

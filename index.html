@@ -8,7 +8,6 @@
 </head>
 
 <body>
-
     <div class="nav_bar">
         <nav>
             <a href="">About</a>
@@ -18,7 +17,7 @@
     </div>
     
     <div class="header">
-        <h1>Intro to HTML: Summary</h1>
+        <h1 id="title">Intro to HTML: Summary</h1>
 
         <div class="data">
             <h3 id="session"><i>Session 1</i></h3>
@@ -29,13 +28,22 @@
     <!-- Added audio and video elements here
         NOTE: audio and video html elements are inline elements -->
     <div class="media">
-        <audio controls>
-            <source src="screenshots/summary.m4a" type="audio/mp4">
-        </audio>
-        <br>
-        <video width="400" height="400" controls>
-            <source src="./cse110-sample.MOV" type="video/mp4">
-        </video>
+        <div class="audio">
+            <audio controls>
+                <source src="screenshots/summary.m4a" type="audio/mp4">
+            </audio>
+        </div>
+        <div class="video">
+            <video id="myself" width="400" height="400" controls>
+                <source src="./cse110-sample.MOV" type="video/mp4">
+            </video>
+        </div>
+    </div>
+
+
+
+    <div class="hidden">
+        <p>THIS IS A HIDDEN MESSAGE NO ONE CAN FIND!!!</p>
     </div>
          
     <hr>
@@ -105,51 +113,55 @@
 
         <br>
 
-        <section id="feedback">
+        <div class="feedback-form">
             <h3>Feedback</h3>
-            <form action="/feedback.txt" method="get">
-                <fieldset>
-                    <legend>Feedback: </legend>
-                    <label for="fname">First name:</label>
-                    <input type="text" id="fname" name="fname"><br><br>
-                    <label for="lname">Last name:</label>
-                    <input type="text" id="lname" name="lname"><br><br>
-                    <label for="experience">How would you rate this website?</label>
-                    <input type="range" id="experience" name="experience"><br><br>
-                    <label>Would you recommend this website?</label>
-                    <input type="checkbox" id="yes" name="yes"><label for="yes"> Yes </label>
-                    <input type="checkbox" id="no" name="no"><label for="no"> No </label><br><br>
-                    <label for="date">When did you visit this site?</label>
-                    <input type="date" id="date" name="date"><br><br>
-                    <label for="feedback">List any questions/concerns below: </label><br>
-                    <textarea id="feedback" name="feedback" rows="4" cols="50">Write out any questions/concerns here!</textarea><br><br>
-                    <label for="browser">Which browser did you visit on?</label>
-                    <input list="browsers" name="browser" id="browser">
-                    <datalist id="browsers">
-                        <option value="Edge">
-                        <option value="Firefox">
-                        <option value="Chrome">
-                        <option value="Opera">
-                        <option value="Safari">
-                    </datalist>
-                    <br>
-                    <label for="where">How did you find this site?</label>
-                    <select id="where">
-                        <option value="idk">idk just found it</option>
-                        <option value="scammer">A scammer gave me the link and I just opened it.</option>
-                        <option value="Clickbait">Clickbaited</option>
-                        <option value="Other">Other</option>
-                    </select> <br><br>
-                    <button type="button">Submit</button>
-                </fieldset>
-
-            </form>
-        </section>
+            <div class="feedback-fields">
+                <form id="realform" action="/feedback.txt" method="get">
+                    <fieldset>
+                        <legend>Feedback: </legend>
+                        <label for="fname">First name:</label>
+                        <input type="text" id="fname" name="fname"><br><br>
+                        <label for="lname">Last name:</label>
+                        <input type="text" id="lname" name="lname"><br><br>
+                        <label for="experience">How would you rate this website?</label>
+                        <input type="range" id="experience" name="experience"><br><br>
+                        <label>Would you recommend this website?</label>
+                        <input type="checkbox" id="yes" name="yes"><label for="yes"> Yes </label>
+                        <input type="checkbox" id="no" name="no"><label for="no"> No </label><br><br>
+                        <label for="date">When did you visit this site?</label>
+                        <input type="date" id="date" name="date"><br><br>
+                        <label for="feedback">List any questions/concerns below: </label><br>
+                        <textarea id="feedback" name="feedback" rows="4" cols="50">Write out any questions/concerns here!</textarea><br><br>
+                        <label for="browser">Which browser did you visit on?</label>
+                        <input list="browsers" name="browser" id="browser">
+                        <datalist id="browsers">
+                            <option value="Edge">
+                            <option value="Firefox">
+                            <option value="Chrome">
+                            <option value="Opera">
+                            <option value="Safari">
+                        </datalist>
+                        <br>
+                        <label for="where">How did you find this site?</label>
+                        <select id="where">
+                            <option value="idk">idk just found it</option>
+                            <option value="scammer">A scammer gave me the link and I just opened it.</option>
+                            <option value="Clickbait">Clickbaited</option>
+                            <option value="Other">Other</option>
+                        </select> <br><br>
+                        <button type="button">Submit</button>
+                    </fieldset>
+                </form>
+                <div class="another-field">Your feedback is critical to ensure that all of these meetings run as smoothly as possible.</p>
+            </div>
+        </div>
 
     </main>
 
+    <p>Note: If anyone is late/missed the meeting they owe Younus at least $1,000,000.</p>
+
     <footer>
-        <p>Note: If anyone is late/missed the meeting they owe Younus at least $1,000,000.</p>
+
     </footer>
 
 </body>
