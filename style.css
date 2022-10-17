@@ -14,6 +14,11 @@ NOTES:
     font-family: "Nunito";
 }
 
+p {
+    margin-left: 5%;
+    margin-top: -1rem;
+}
+
 /* Putting header into a flex box to align everything in a row*/
 .header {
     display: flex;
